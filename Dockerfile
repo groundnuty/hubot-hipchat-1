@@ -5,7 +5,7 @@ MAINTAINER Tim Hartmann <tfhartmann@gmail.com>
 RUN apt-get update
 RUN apt-get -y install wget python-dev g++ make libicu-dev redis-server python-pip
 
-RUN npm install --global coffee-script hubot@v2.19.0
+RUN npm install --global coffee-script hubot@v2.7.5
 RUN hubot --create /opt/hubot
 WORKDIR /opt/hubot
 RUN npm install
