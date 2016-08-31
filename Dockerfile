@@ -5,11 +5,11 @@ MAINTAINER Tim Hartmann <tfhartmann@gmail.com>
 RUN apt-get update
 RUN apt-get -y install wget python-dev g++ make libicu-dev redis-server python-pip
 
-RUN npm install --global coffee-script hubot@v2.7.5
+RUN npm install --global coffee-script hubot@v2.19.0
 RUN hubot --create /opt/hubot
 WORKDIR /opt/hubot
 RUN npm install
-RUN npm install --save git+https://github.com/idio/hubot-hipchat.git
+RUN npm install --save git+https://github.com/groundnuty/hubot-hipchat.git
 ADD add-hubot-scripts.sh /tmp/
 ADD add-external-scripts.py /tmp/
 
